@@ -1,0 +1,17 @@
+name : My First Github Action
+
+on:
+  push:
+      branches:
+          -main  # runs only when you push to main branch
+
+ Jobs:
+     build:
+         runs-on: ubuntu-latest
+
+         steps:
+            -name: checkout code
+            uses:actions/checkout@v3
+
+          -name: Run Hello World
+          run:echo "My first GitHub Action is working!"
