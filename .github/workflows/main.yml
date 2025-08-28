@@ -5,7 +5,7 @@ on:
       branches:
           -main  # runs only when you push to main branch
 
- Jobs:
+ jobs:
      build:
          runs-on: ubuntu-latest
 
